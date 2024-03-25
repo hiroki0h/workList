@@ -1,0 +1,145 @@
+.modalRoot {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: top 0.3s ease-in-out;
+    animation-duration: 0.25s;
+}
+.modalRoot > div {
+    padding: 20px;
+}
+.modalBody {
+    width: 820px;
+    height: 100%;
+    padding: 32px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 20px;
+    background: #005246;
+    transition: all;
+    transition-duration: 0.25s;
+}
+
+.btnClose {
+    margin-left: auto;
+    font-size: 30px;
+    color: #fff;
+    display: block;
+}
+
+.modalContent {
+}
+.modalTitle {
+    padding-bottom: 20px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+}
+.modalTitle span {
+    margin-right: 10px;
+    font-size: 35px;
+}
+.modalDesc {
+    padding-bottom: 30px;
+}
+.modalInfo {
+    display: flex;
+    align-items: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.modalInfo ul {
+    width: 100%;
+}
+.modalInfo li {
+    padding-bottom: 4px;
+    display: flex;
+}
+
+.modalInfo span {
+    width: 100px;
+    font-weight: bold;
+    display: block;
+}
+.modalInfo p {
+    flex: 1;
+}
+
+.btnRadius {
+    padding: 4px 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+.btnRadius:hover {
+    background-color: #000;
+}
+
+.show {
+    top: 0;
+    transition: top 0.3s ease-in-out;
+    animation-duration: 0.25s;
+}
+.hide {
+    top: 100%;
+    transition: top 0.3s ease-in-out;
+    animation-duration: 0.25s;
+}
+
+.sliderRoot {
+    max-width: 100vw;
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+}
+.sliderRoot .thumbRoot {
+}
+.sliderRoot .thumbRoot .thumb {
+    width: 100%;
+    height: 0;
+    padding-bottom: 58%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sliderRoot .thumbRoot .caption {
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    opacity: 0.5;
+}
+@media (max-width: 840px) {
+    .modalBody {
+        max-width: 80%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .modalTitle {
+        font-size: 28px;
+        line-height: 1.3;
+        display: block;
+    }
+    .modalTitle span {
+        margin-right: 0;
+        display: block;
+    }
+    .modalInfo li {
+        display: block;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,70 @@
+.experieeBox {
+}
+.experieeBox ul {
+    width: 100%;
+    max-width: 768px;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+.experieeBox li {
+    padding: 30px 26px 24px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+.experieeBox div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.experieeBox p svg {
+    margin-right: 4px;
+}
+.experieeBox p {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease-out;
+}
+.experieeBox .position {
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: 600;
+}
+.experieeBox .time {
+    max-width: 80px;
+    width: 100%;
+    padding: 4px 10px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 20px;
+    background: #fd6f00;
+    display: inline;
+}
+.experieeBox .experieeBoxHeader {
+    padding-bottom: 10px;
+}
+.experieeBox .experieeBoxBottom {
+}
+.experieeBox .experieeBoxBottom div {
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .experieeBox .experieeBoxBottom {
+        display: block;
+    }
+    .experieeBox .experieeBoxBottom div {
+        width: 100%;
+    }
+}
+@media (max-width: 520px) {
+    .experieeBox li {
+        padding: 30px 0px 24px;
+    }
+    .experieeBox .experieeBoxBottom div {
+        display: block;
+    }
+    .experieeBox .experieeBoxBottom p {
+        margin-bottom: 4px;
+    }
+}

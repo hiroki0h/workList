@@ -1,0 +1,123 @@
+.main {
+    max-width: 1320px;
+    padding: 0 20px;
+    margin: 0 auto;
+    color: #fff;
+}
+.main p {
+    font-size: 20px;
+}
+.main h2 {
+    padding-top: 80px;
+    text-align: center;
+    font-size: 65px;
+}
+.main .descText {
+    padding-top: 32px;
+    font-size: 22px;
+}
+.main section {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+.main section:last-child {
+    padding-bottom: 120px;
+}
+.main .mainBox {
+    height: 100vh;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    position: relative;
+}
+.mainBox .mainImg {
+    width: 40%;
+    max-width: 450px;
+    height: 0;
+    padding-bottom: 34.091%;
+    border-radius: 100%;
+    background: #fd6f00;
+    position: absolute;
+    z-index: -1;
+}
+.mainBox .mainTitle {
+    width: 100%;
+}
+.mainBox .mainTitle h1 {
+    width: 60%;
+    line-height: 90%;
+    margin-left: -8px;
+    font-size: 110px;
+    font-weight: 600;
+    letter-spacing: -4.54px;
+}
+
+.mainBox .mainTitle span {
+    display: block;
+}
+.mainBox .mainTitle .mainName {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fd6f00;
+}
+@media (max-width: 640px) {
+    .main .mainBox {
+    }
+    .main h2 {
+        padding-top: 40px;
+        font-size: 40px;
+    }
+    .mainBox .mainImg {
+        width: 240px;
+        max-width: 100%;
+        height: 240px;
+        margin-bottom: 34%;
+    }
+    .mainBox .mainTitle {
+        width: 100%;
+    }
+    .mainBox .mainTitle h1 {
+        font-size: 66px;
+    }
+}
+@media (max-width: 534px) {
+    .main .mainBox {
+    }
+    .mainBox .mainImg {
+        margin-bottom: 83%;
+    }
+}
+
+/* Accordion.module.css */
+.accordion {
+    width: 100%;
+}
+
+.item {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.title {
+    background-color: #f0f0f0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.title:hover {
+    background-color: #e0e0e0;
+}
+
+.content {
+    padding: 10px;
+    display: none;
+    overflow: hidden;
+}
+
+.active .content {
+    display: block;
+}

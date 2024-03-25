@@ -1,0 +1,38 @@
+.stackBox {
+}
+.stackBox ul {
+    width: 100%;
+    max-width: 796px;
+    padding-top: 20px;
+    margin: auto;
+    display: grid;
+    grid-column-gap: 20px;
+    column-gap: 20px;
+    grid-row-gap: 20px;
+    row-gap: 20px;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+}
+.stackBox li {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 50px;
+    background-color: #fff;
+    position: relative;
+    transition: all 0.5s ease-out;
+}
+.stackBox {
+}
+
+@media (max-width: 768px) {
+    .stackBox ul {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+@media (max-width: 380px) {
+    .stackBox li {
+        width: 60px;
+        height: 60px;
+    }
+}
