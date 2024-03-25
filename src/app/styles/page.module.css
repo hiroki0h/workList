@@ -38,10 +38,23 @@
     max-width: 450px;
     height: 0;
     padding-bottom: 34.091%;
+    overflow: hidden;
     border-radius: 100%;
     background: #fd6f00;
     position: absolute;
     z-index: -1;
+}
+.mainBox .mainImg span {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+    background-image: url(../../../public/images/jjImage.png);
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 .mainBox .mainTitle {
     width: 100%;
@@ -63,6 +76,12 @@
     font-weight: bold;
     letter-spacing: 2px;
     color: #fd6f00;
+    mix-blend-mode: color-dodge;
+}
+@media (max-width: 1280px) {
+    .mainBox .mainImg {
+        padding-bottom: 38.091%;
+    }
 }
 @media (max-width: 640px) {
     .main .mainBox {
@@ -90,34 +109,4 @@
     .mainBox .mainImg {
         margin-bottom: 83%;
     }
-}
-
-/* Accordion.module.css */
-.accordion {
-    width: 100%;
-}
-
-.item {
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-}
-
-.title {
-    background-color: #f0f0f0;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.title:hover {
-    background-color: #e0e0e0;
-}
-
-.content {
-    padding: 10px;
-    display: none;
-    overflow: hidden;
-}
-
-.active .content {
-    display: block;
 }

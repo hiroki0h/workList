@@ -1,6 +1,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import styles from '@/src/app/styles/page.module.css';
+import Image from 'next/image';
 import { doc, getDoc } from '@firebase/firestore';
 import fireStore from '@/src/firebase/firestore';
 import ModalProject from '@/src/app/components/ModalProject';
@@ -67,7 +68,6 @@ export default function Home() {
         getData();
     }, []);
     useEffect(() => {
-        console.log({ workList });
         generateArray(0, perPage);
     }, [workList, perPage]);
 
@@ -93,7 +93,9 @@ export default function Home() {
             {!loading && <LodingImage />}
             <main className={styles.main}>
                 <section className={styles.mainBox}>
-                    <div className={styles.mainImg} />
+                    <div className={styles.mainImg}>
+                        <span />
+                    </div>
                     <div className={styles.mainTitle}>
                         <p>Hi, I am</p>
                         <p className={styles.mainName}>최재연</p>

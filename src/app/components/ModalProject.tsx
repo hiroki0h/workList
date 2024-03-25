@@ -46,7 +46,6 @@ const ModalProject = ({ isOpen, setIsOpen, detailData }: ModalProps) => {
     useEffect(() => {
         if (detailData) {
             setSliderData(detailData?.data);
-            console.log('sliderData', sliderData);
         }
     }, [detailData]);
     const onClose = () => {
@@ -71,9 +70,6 @@ const ModalProject = ({ isOpen, setIsOpen, detailData }: ModalProps) => {
                 },
             },
         ],
-    };
-    const adasdasd = () => {
-        console.log('asd');
     };
     return (
         modalContainer &&
@@ -121,7 +117,7 @@ const ModalProject = ({ isOpen, setIsOpen, detailData }: ModalProps) => {
                                 </div>
                                 {sliderData.length === 1 ? (
                                     <div className={styles.sliderRoot}>
-                                        <div className={styles.thumbRoot} onClick={adasdasd}>
+                                        <div className={styles.thumbRoot}>
                                             <div
                                                 className={styles.thumb}
                                                 style={{
@@ -135,7 +131,7 @@ const ModalProject = ({ isOpen, setIsOpen, detailData }: ModalProps) => {
                                     <div className={styles.sliderRoot}>
                                         <Slider {...settings}>
                                             {sliderData.map((item: any, index: number) => (
-                                                <div key={index} className={styles.thumbRoot} onClick={adasdasd}>
+                                                <div key={index} className={styles.thumbRoot}>
                                                     <div
                                                         className={styles.thumb}
                                                         style={{

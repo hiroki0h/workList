@@ -56,7 +56,6 @@ const WorkBox = ({
                                 onClick={() => {
                                     listFilterEvent(index === 6 ? 7 : index);
                                     setActiveIndex(index);
-                                    console.log('22');
                                 }}
                             >
                                 {item.label} {index === 0 && `(${count})`}
