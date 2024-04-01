@@ -12,7 +12,8 @@
     animation-duration: 0.25s;
 }
 .modalRoot > div {
-    padding: 20px;
+    width: 100%;
+    padding: 20px 0;
 }
 .modalBody {
     width: 820px;
@@ -122,8 +123,10 @@
     opacity: 0.5;
 }
 @media (max-width: 840px) {
+    .modalRoot > div {
+        width: 90%;
+    }
     .modalBody {
-        max-width: 80%;
         width: 100%;
     }
 }

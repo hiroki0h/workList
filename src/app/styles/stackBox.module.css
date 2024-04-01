@@ -9,7 +9,7 @@
     grid-column-gap: 20px;
     column-gap: 20px;
     grid-row-gap: 20px;
-    row-gap: 20px;
+    row-gap: 40px;
     grid-template-columns: repeat(8, minmax(0, 1fr));
 }
 .stackBox li {
@@ -27,6 +27,7 @@
 
 @media (max-width: 768px) {
     .stackBox ul {
+        row-gap: 20px;
         grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 }
